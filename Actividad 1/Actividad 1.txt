@@ -1,1 +1,1 @@
-En tiempo O(sqrt(n)) encuentra si un n˙mero entero 'n' es un n˙mero primo.
+En tiempo O(sqrt(n)) encuentra si un n√∫mero entero 'n'>2 es un n√∫mero primo.
