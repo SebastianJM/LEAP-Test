@@ -1,0 +1,4 @@
+Considero que la mejor solución es crear un pool de objetos que permita almacenar enemigos instanciados. Cuando un enemigo sale de escena, en lugar de ser destruído, será declarado como disponible para cuando se necesite mostrar uno nuevo. En caso no existan enemigos disponibles para ser "reseteados", se procederá a instanciar uno nuevo.
+De este modo se reduce drásticamente la cantidad de veces que nuevos enemigos son instanciados y eliminados.
+
+Más información sobre Object Pool: https://es.wikipedia.org/wiki/Object_pool_(patr%C3%B3n_de_dise%C3%B1o)
