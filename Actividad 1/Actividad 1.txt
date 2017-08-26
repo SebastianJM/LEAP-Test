@@ -1,0 +1,1 @@
+En tiempo O(sqrt(n)) encuentra si un número entero 'n' es un número primo.
