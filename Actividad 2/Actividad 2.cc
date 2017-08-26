@@ -1,11 +1,11 @@
-// Solución en C++
+// SoluciÃ³n en C++
 
 #include <iostream>
 #include <math.h>
 
 using namespace std;
 
-// Estructura rectángulo
+// Estructura rectÃ¡ngulo
 struct rect
 {
 	float centerX,centerY;
@@ -21,7 +21,7 @@ struct rect
 	}
 };
 
-// Intersección entre dos rectángulos
+// IntersecciÃ³n entre dos rectÃ¡ngulos
 bool intersect(rect r1, rect r2)
 {
 	if(r1.xmin < r2.xmax && r1.xmax > r2.xmin &&
@@ -30,7 +30,7 @@ bool intersect(rect r1, rect r2)
 	return false;
 }
 
-// Intersección entre tres triángulos
+// IntersecciÃ³n entre tres triÃ¡ngulos
 void three_rect_intersect(rect A,rect B, rect C)
 {
 	if(intersect(A,B))
