@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Actividad 3</title>
+	<script type="text/javascript" src="phaser.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+	var game=new Phaser.Game(480,800,Phaser.AUTO,'',{preload:preload,create:create,update:update});
+	var PI=2*Math.acos(0);
+	var group=null;
+	var deltaX=game.width/3;
+	var deltaY=game.height/3;
+	function preload()
+	{
+		game.load.image("point",'circle.png');
+		
+	}
+	function create()
+	{
+	    var P={x:2,y:2};
+		group=game.add.group();
+		var tmp=game.add.sprite(P.x+deltaX,P.y+deltaY,"point");
+		tmp.anchor.setTo(0.5,0.5);
+		tmp.scale.setTo(0.01,0.01);
+		group.add(tmp);
+		
+		var n=60;
+		var radio=185.0;
+		var ang=180.0/n;
+		var p0={x:radio,y:0}; // Punto pivot
+	
+		for(var i=0;i<n;i++)
+			rotate1(p0,ang*i,P);
+	}
+	function update()
+	{
+		
+	}
+	function rotate1(p,theta,origin)
+	{
+		var rad=theta*PI/180.0;
+		var tmp=game.add.sprite(p.x * Math.cos(rad) - p.y * Math.sin(rad)+origin.x+deltaX,p.x * Math.sin(rad) + p.y * Math.cos(rad)+origin.y+deltaY,'point');
+		tmp.anchor.setTo(0.5,0.5);
+		tmp.scale.setTo(0.01,0.01);
+		group.add(tmp);
+	}
+	
+	</script>
+</body>
+</html>
