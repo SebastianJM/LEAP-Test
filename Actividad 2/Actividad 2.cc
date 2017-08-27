@@ -42,9 +42,9 @@ void three_rect_intersect(rect A,rect B, rect C)
 }
 int main() 
 {
-	rect A(0,0,10,1);
-	rect B(10,0,11,6);
-	rect C(10,10,1,14.01);
+	rect A(0,0,10,1); // (xa,ya,wa,ha)
+	rect B(10,0,11,6); // (xb,yb,wb,hb)
+	rect C(10,10,1,14.01); // (xc,yc,wc,hc)
 	three_rect_intersect(A,B,C);
 	return 0;
 }
