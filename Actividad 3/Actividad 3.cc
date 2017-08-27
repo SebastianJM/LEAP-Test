@@ -1,3 +1,5 @@
+// Hecho en C++
+
 #include <iostream>
 #include <math.h>
 
@@ -17,7 +19,7 @@ void rotate1(point p, double theta,point origin) // Rota alrededor del origen, l
 	// Matriz de rotacion:
 	printf("%.4lf %.4lf\n",p.x * cos(rad) - p.y * sin(rad)+origin.x,p.x * sin(rad) + p.y * cos(rad)+origin.y);
 }
-void rotate2(double theta,double radio,point origin) // Otra forma de rotar (sin matriz de rotación)
+void rotate2(double theta,double radio,point origin) // Otra forma de rotar (sin matriz de rotaciÃ³n)
 {
 	double rad = theta * PI / 180.0; // A Radianes 
 	printf("%.4lf %.4lf\n",cos(rad)*radio+origin.x,sin(rad)*radio+origin.y);
