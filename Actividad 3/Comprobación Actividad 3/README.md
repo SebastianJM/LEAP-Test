@@ -5,9 +5,9 @@
      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
     ----------------------------------------------------------------- 
 
-Made on Phaser.js
+Made on Phaser.js - 
 Project developed for the LEAP Game Studios Test.
 
-By Sebastián José Muñoz de la Cruz 
+By Sebastián José Muñoz de la Cruz - 
 August 26th, 2017
 
